@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-    baseURL: "/api/cart",
+    baseURL: `${import.meta.env.VITE_API_URL}/api/cart`,
     withCredentials: true
 });
 
